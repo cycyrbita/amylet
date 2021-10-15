@@ -46,7 +46,7 @@
     max-width: 840px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     text-align: center;
     padding: 15px 30px;
@@ -259,6 +259,14 @@
 
     .screen3__info {
         margin-top: -50px;
+        
+        p {
+            font-size: 22px;
+
+            b {
+                font-size: 26px;
+            }
+        }
     }
 
     .screen3__list-footer {
@@ -266,6 +274,7 @@
         margin-left: -40px;
         background: rgb(53,45,33);
         background: linear-gradient(180deg, rgba(53,45,33,1) 0%, rgba(94,79,58,1) 50%, rgba(53,45,33,1) 100%);
+        font-size: 20px;
     }
 
     .screen3__list {
