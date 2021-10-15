@@ -67,6 +67,18 @@
     }
 }
 
+.face__sun {
+    position: absolute;
+    top: -11px;
+    margin-left: -196px;
+    left: 50%;
+    width: 965px;
+    height: 760px;
+    background-image: url("../media/face/sun.png");
+    background-repeat: no-repeat;
+    animation: face 4s linear infinite;
+}
+
 @media (max-width: 1280px) {
     .face {
         flex-direction: column;
@@ -95,6 +107,10 @@
             }
         }
     }
+
+    .face__sun {
+        top: 95px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -116,6 +132,10 @@
 
     .face__box:last-child {
         margin-top: 480px;
+    }
+
+    .face__sun {
+        top: 125px;
     }
 }
 
@@ -157,5 +177,28 @@
             font-size: 14px;
             background-size: auto 130px;
         }
+    }
+
+    .face__sun {
+        height: 163px;
+        top: 121px;
+        margin-left: 0;
+        transform: translateX(-98px);
+        background-size: contain;
+        max-width: 200px;
+    }
+}
+
+@keyframes face {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
