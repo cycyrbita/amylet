@@ -46,13 +46,14 @@
     max-width: 840px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 17px;
+    font-size: 24px;
     color: #fff;
     text-align: center;
     padding: 15px 30px;
     background-color: #2f271e;
     border-radius: 2px;
     box-shadow: 0px 0px 40px -10px #000;
+    animation: big 5s infinite;
 }
 
 .screen3__body {
@@ -80,6 +81,59 @@
             font-family: 'SpectralSC', serif;
             font-size: 21px;
         }
+    }
+}
+
+.screen3__blik {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 131px;
+    height: 121px;
+    background-image: url("../media/screen3/blik.png");
+    background-repeat: no-repeat;
+    animation: blik3 6s linear infinite;
+    opacity: 0;
+}
+
+@keyframes blik3 {
+    0% {
+        transform: translate(0, 0) rotate(10deg) scale(0.5);
+    }
+    5% {
+        transform: translate(10px, -10px) rotate(50deg) scale(0.7);
+        opacity: 1;
+    }
+    10% {
+        transform: translate(20px, -15px) rotate(100deg) scale(0.9);
+    }
+    15% {
+        transform: translate(45px, -25px) rotate(150deg) scale(1.2);
+    }
+    20% {
+        transform: translate(80px, -20px) rotate(200deg) scale(1);
+    }
+    25% {
+        transform: translate(110px, -10px) rotate(250deg) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 

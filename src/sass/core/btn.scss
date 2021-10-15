@@ -15,6 +15,7 @@
     box-shadow: 13px 13px 15px rgba(0, 0, 0, 0.12);
     font-size: 15px;
     color: #000;
+    animation: btn 4s infinite;
 
     &:hover {
         opacity: 1;
@@ -27,5 +28,23 @@
     .btn {
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+}
+
+@keyframes btn {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.1);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
